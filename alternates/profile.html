@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Alternate Views Profile</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    #content {
+      margin: 0 auto;
+      width: 1000px ;
+      text-align: left;
+    }
+    table.properties {
+      border-collapse: collapse;
+      border: solid 2px black;
+      width: 50% ;
+    }
+    table.properties td,
+    table.properties th {
+      border: solid 1px black;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">
+  <h1>Alternate Views Profile</h1>
+  <p>This is a profile, described according to the <a href="https://www.w3.org/TR/dx-prof/">Profiles Vocabulary</a> (PROF), which constrains some DCMI Metadata Terms and introduces a Class of its own.</p>
+  <p>All of the properties in the tables below are PROF properties.</p>
+  <p>This profile information is also avialable in RDF (turtle) via the link below or via Content Negotiation:</p>
+  <ul><li><a href="https://w3id.org/profile/alternates.ttl">https://w3id.org/profile/alternates.ttl</a></li></ul>
+  <h3>Profile</h3>
+  <table class="properties">
+    <tr>
+      <th><em>Property</em></th>
+      <th><em>Value</em></th>
+    </tr>
+    <tr>
+      <th>URI</th>
+      <td><a href="https://w3id.org/profile/alternates">https://w3id.org/profile/alternates</a></td>
+    </tr>
+    <tr>
+      <th>Is Profile Of</th>
+      <td><a href="http://dublincore.org/documents/2012/06/14/dcmi-terms/">DCMI Metadata Terms</a></td>
+    </tr>
+    <tr>
+      <th>Token</th>
+      <td>alternates</td>
+    </tr>
+    <tr>
+      <th>Resource Descriptors</th>
+      <td>
+        <ul>
+          <li><a href="#schema">Alternates View Profile Schema</a></li>
+          <li><a href="#repo">Repository README</a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>Creator</th>
+      <td>
+        <a href="https://orcid.org/0000-0002-8742-7730">Nicholas J. Car</a><br />
+        of <a href="https://surroundaustralia.com">SURROUND Australia Pty Ltd</a><br />
+        <a href="mailto:nicholas.car@surroundaustralia.com">nicholas.car@surroundaustralia.com</a>
+      </td>
+    </tr>
+  </table>
+  <h3>Resource Descriptors</h3>
+  <a id="schema"></a>
+  <h4>Alternates View Profile Schema</h4>
+  <table class="properties">
+    <tr>
+      <th><em>Property</em></th>
+      <th><em>Value</em></th>
+    </tr>
+    <tr>
+      <th>Artifact</th>
+      <td><a href="http://data.surroundaustralia.com/def/alternates">http://data.surroundaustralia.com/def/alternates</a></td>
+    </tr>
+    <tr>
+      <th>Role</th>
+      <td><a href="http://www.w3.org/ns/dx/prof/role/specification">specification</a></td>
+    </tr>
+    <tr>
+      <th>Format(s)</th>
+      <td>
+        <ul>
+          <li><a href="https://w3id.org/mediatype/text/html">HTML</a></li>
+          <li><a href="https://w3id.org/mediatype/text/turtle">Turtle</a></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <a id="repo"></a>
+  <h4>Repository README</h4>
+  <table class="properties">
+    <tr>
+      <th><em>Property</em></th>
+      <th><em>Value</em></th>
+    </tr>
+    <tr>
+      <th>Artifact</th>
+      <td><a href="https://github.com/nicholascar/alternates-view-profile">https://github.com/nicholascar/alternates-view-profile</a></td>
+    </tr>
+    <tr>
+      <th>Role</th>
+      <td><a href="http://www.w3.org/ns/dx/prof/role/guidance">guidance</a></td>
+    </tr>
+    <tr>
+      <th>Format(s)</th>
+      <td>
+        <ul>
+          <li><a href="https://w3id.org/mediatype/text/html">HTML</a></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+#
+#   This document is a description, according to the Profiles Vocabulary (see https://www.w3.org/TR/dx-prof/),
+#   of a profile called "Alternates View" which constrains some Dublin Core Terms and introduces a Class of its own.
+#
+
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# This Profile
+<https://w3.org/profile/alternates>
+    a                   prof:Profile ;
+    rdfs:label          "Alternates View" ;
+    rdfs:comment        "This is a profile, described according to the Profiles Vocabulary (see https://www.w3.org/TR/dx-prof/), which constrains some DCMI Metadata Terms and introduces a Class of its own." ;
+    prof:isProfileOf    <http://dublincore.org/documents/2012/06/14/dcmi-terms/> ;
+    prof:token          "alternates"^^xsd:token ;
+    prof:hasResource    _:1 , _:2 ;
+    dct:creator [
+        a sdo:Person ;
+        sdo:affiliation <https://surroundaustralia.com> ;
+        sdo:email "nicholas.car@surroundaustralia.com" ;
+        sdo:identifier <https://orcid.org/0000-0002-8742-7730> ;
+        sdo:name "Nicholas J. Car"
+    ] .
+
+
+# Base specification (a Standard) being profiled
+<http://dublincore.org/documents/2012/06/14/dcmi-terms/>
+    a                   dct:Standard ;
+    rdfs:label          "DCMI Metadata Terms" .
+
+# The Profile's schema, in machine- and human-readable formats (HTML & Turtle)
+_:1
+    a                 prof:ResourceDescriptor ;
+    rdfs:label        "Alternates View Profile Schema" ;
+    dct:format        <https://w3id.org/mediatype/text/html> , <https://w3id.org/mediatype/text/turtle> ;
+    prof:hasRole      role:specification ;
+    prof:hasArtifact  <http://data.surroundaustralia.com/def/alternates> .
+
+# The code repository home
+# Note sure HTML is the correct format
+_:2
+    a                 prof:ResourceDescriptor ;
+    rdfs:label        "Repository README" ;
+    dct:format        <https://w3id.org/mediatype/text/html> ;
+    prof:hasRole      role:guidance ;
+    prof:hasArtifact  <https://github.com/nicholascar/alternates-view-profile> .
+

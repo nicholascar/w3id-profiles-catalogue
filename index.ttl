@@ -15,9 +15,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     dcterms:rights "(c) Nicholas Car, 2020" ;
 .
 
-<https://w3id.org/profile/alt>
+<https://w3id.org/profile/alternates>
     a prof:Profile ;
-    rdfs:label "Alternates Profile" ;
+    rdfs:label "Alternate Views" ;
 .
 
 <https://w3id.org/profile/epub>
