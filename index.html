@@ -1,20 +1,47 @@
-<html>
-<body>
-<h1>Profiles Catalogue</h1>
-<p>A profiles catalogue is being established here, <a href="https://w3id.org/profile/">https://w3id.org/profile/</a>, that will list profiles characterised
-according to the <a href="https://w3c.github.io/dxwg/prof/">W3C's Profiles Vocabulary</a>.</p>
-<p>This is a general-purpose catalogue &ndash; it's for use by anyone &ndash; and will allow profiles to be both identified with a persistent URI (<code>htt
-ps://w3id.org/profile/<YOUR-ID></code>) and for their content to be indexed, as long as it's presented according to the <em>Profiles Vocabulary</em>. Profil
-es with URIs may be linked to by other profiles ("profiles of profiles") or be used as conformance targets allowing instance data to indicate that it claims
- conformance to that profile.</p>
-<p>This catalogue is being built by the editors of the <em>Profiles Vocabulary</em> so see that document for their contact information.</p>
-<h2>Profiles</h2>
-<ol>
-  <li><a href="https://w3id.org/profile/alternates">Alternates Profile</a></li>
-  <li><a href="https://w3id.org/profile/mediatype">Media Types Profile</a></li>
-  <li><a href="https://w3id.org/profile/pylode-owl">pyLODE OWL Ontology Documentation Profile</a></li>
-  <li><a href="https://w3id.org/profile/pylode-owl">pyLODE SKOS Documentation Profile</a></li>
-  <li><a href="https://w3id.org/profile/uri-list">URI List Profile</a></li>
-</ol>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+  <h1>Profiles Catalogue</h1>
+  <p>This is a catalogue of <em>profiles</em>, that is, instances of the <a href="https://w3c.github.io/dxwg/prof/">W3C's Profiles Vocabulary</a>'s <code>prof:Profile</code> class.</p>
+  <p>This is a general-purpose catalogue &ndash; it's for use by anyone &ndash; and allows profiles to be both identified with a persistent URI (<code>https://w3id.org/profile/&lt;YOUR-ID&gt;</code>) and for their content to be indexed, as long as it's presented according to the <em>Profiles Vocabulary</em>.</p>
+  <h3>Access</h3>
+  <p>This Catalogue can be accessed by humans at this web address, or by machines which may use <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation">HTTP Content Negotiation</a>.</p>
+  <p>The various profiles and Media Types by which this Catalogue may be accessed are listed and described by its <a href="https://w3id.org/profile/?_profile=alt">Alternate Profiles</a> profile.</p>
+  <h3>Additions</h3>
+  <p>Additions to this catalogue will be accepted as long as they meet these conditions</p>
+  <ol>
+    <li>
+      contains a primary profile description document in RDF, conforming to the <em>Profiles Vocabulary</em> specification
+      <ul>
+        <li>see the <em>Profiles Vocabulary</em>'s <a href="https://w3c.github.io/dx-prof/testsuite">Test Suite</a> to check conformance</li>
+      </ul>
+    </li>
+    <li>
+      contains an HTML description document, reflecting the RDF primary profile description document's contents, for human reading
+    </li>
+    <li>
+      any other artifacts referred to by the profile that are not otherwise available via public URI
+    </li>
+  </ol>
+  <p>See the existing profiles for examples. You might view them <a href="https://github.com/nicholascar/w3id-profiles-catalogue">in this Catalogue's code repository</a>.</p>
+  <p>To add to this catalogue, please either:</p>
+  <ul>
+    <li>email Nicholas Car at <a href="nicholas.car@surroundaustralia.com">nicholas.car@surroundaustralia.com</a></li>
+    <li>create a <a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests">Pull Request</a> for the repository which manages the catalogue content which is <a href="https://github.com/nicholascar/w3id-profiles-catalogue">https://github.com/nicholascar/w3id-profiles-catalogue</a></li>
+  </ul>
+  <p>The Pull Request method is preferred!</p>
+  <h2>Profiles</h2>
+  <p>Profiles listed in this catalogue are:</p>
+  <ol>
+    <li><a href="https://w3id.org/profile/alt">Alternates Profile</a></li>
+    <li><a href="https://w3id.org/profile/epub">CSIRO ePublish Dublin Core Application Profile</a></li>
+    <li><a href="https://w3id.org/profile/mediatype">Media Types Profile</a></li>
+    <li><a href="https://w3id.org/profile/owlp">pyLODE OWL Ontology Documentation Profile</a></li>
+    <li><a href="https://w3id.org/profile/skosp">pyLODE SKOS Documentation Profile</a></li>
+    <li><a href="https://w3id.org/profile/uril">URI List Profile</a></li>
+  </ol>
+  <footer style="font-size: small; border-top:solid 1px grey; padding-top: 10px;">
+    See <a href="https://github.com/nicholascar/w3id-profiles-catalogue">this web page's code repository</a> for license and rights information for this site.
+  </footer>
+  </body>
 </html>

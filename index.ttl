@@ -1,21 +1,29 @@
 PREFIX prof: <http://www.w3.org/ns/dx/prof/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-<>
+<https://w3id.org/profile/>
     a rdf:Bag ;
-    rdfs:label "Container of Profiles" ;
-    rdfs:comment "This is an RDF container (an rdf:Bag) of *profiles*, that is, instances of the Profiles Vocabulary's prof:Profile class."@en ;
+    rdfs:label "Catalogue of Profiles" ;
+    rdfs:comment "This is an RDF container (an rdf:Bag) of *profiles*, that is, instances of the Profiles Vocabulary's prof:Profile class. The container can be considered a Catalogue."@en ;
     rdfs:member
-        <https://w3id.org/profile/alternates> ,
+        <https://w3id.org/profile/alt> ,
         <https://w3id.org/profile/mediatype> ,
-        <https://w3id.org/profile/pylode-owl> ,
-        <https://w3id.org/profile/pylode-owl> ,
-        <https://w3id.org/profile/uri-list> ;
+        <https://w3id.org/profile/owlp> ,
+        <https://w3id.org/profile/skosp> ,
+        <https://w3id.org/profile/uril> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "(c) Nicholas Car, 2020" ;
 .
 
-<https://w3id.org/profile/alternates>
+<https://w3id.org/profile/alt>
     a prof:Profile ;
     rdfs:label "Alternates Profile" ;
+.
+
+<https://w3id.org/profile/epub>
+    a prof:Profile ;
+    rdfs:label "CSIRO ePublish Dublin Core Application Profile" ;
+    rdfs:comment "This is a dummy profile of a set of vocabularies, principally (Dublin Core Terms & FOAF but others that those they utilise, such as RDFS. This profile is constructed as a Dublin Core Application Profile which constrains the vocabulary terms used."@en ;
 .
 
 <https://w3id.org/profile/mediatype>
@@ -23,17 +31,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Media Types Profile" ;
 .
 
-<https://w3id.org/profile/pylode-owl>
+<https://w3id.org/profile/owlp>
     a prof:Profile ;
     rdfs:label "pyLODE OWL Ontology Documentation Profile" ;
 .
 
-<https://w3id.org/profile/pylode-owl>
+<https://w3id.org/profile/skosp>
     a prof:Profile ;
     rdfs:label "pyLODE SKOS Documentation Profile" ;
 .
 
-<https://w3id.org/profile/uri-list>
+<https://w3id.org/profile/uril>
     a prof:Profile ;
     rdfs:label "URI List Profile" ;
 .
