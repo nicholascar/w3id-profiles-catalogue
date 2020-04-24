@@ -1,0 +1,39 @@
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<>
+    a rdf:Bag ;
+    rdfs:label "Container of Profiles" ;
+    rdfs:comment "This is an RDF container (an rdf:Bag) of *profiles*, that is, instances of the Profiles Vocabulary's prof:Profile class."@en ;
+    rdfs:member
+        <https://w3id.org/profile/alternates> ,
+        <https://w3id.org/profile/mediatype> ,
+        <https://w3id.org/profile/pylode-owl> ,
+        <https://w3id.org/profile/pylode-owl> ,
+        <https://w3id.org/profile/uri-list> ;
+.
+
+<https://w3id.org/profile/alternates>
+    a prof:Profile ;
+    rdfs:label "Alternates Profile" ;
+.
+
+<https://w3id.org/profile/mediatype>
+    a prof:Profile ;
+    rdfs:label "Media Types Profile" ;
+.
+
+<https://w3id.org/profile/pylode-owl>
+    a prof:Profile ;
+    rdfs:label "pyLODE OWL Ontology Documentation Profile" ;
+.
+
+<https://w3id.org/profile/pylode-owl>
+    a prof:Profile ;
+    rdfs:label "pyLODE SKOS Documentation Profile" ;
+.
+
+<https://w3id.org/profile/uri-list>
+    a prof:Profile ;
+    rdfs:label "URI List Profile" ;
+.
